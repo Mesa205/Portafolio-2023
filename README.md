@@ -1,6 +1,8 @@
+
 # Personal Portfolio Website
-This project is one of the results of my journey learning frontend with react.
+This project is one of the ones I have done in the form of learning React
 
 
 # Preview
-![screencapture-localhost-3000-2022-12-20-20_12_19](https://user-images.githubusercontent.com/73756341/208675550-16881030-8ac9-451f-9cbb-85ebc9ffca97.png)
+
+<img width="926" alt="portada" src="https://github.com/Mesa205/Portafolio-2023/assets/106029996/da64e1b8-63e7-4eb9-9bfe-e62f5f6b09b8">
