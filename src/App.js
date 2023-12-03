@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import './App.css';
 import Navbar from './Navbar'
 import {AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillMail, AiFillEnvironment, AiFillPhone} from 'react-icons/ai'
@@ -30,11 +30,26 @@ function App() {
           
           
         </div>
+
+            <div className='flex flex-col  gap-8 mt-8'>
+        <div className='w-full md:w-6/6 bg-black shadow-md rounded border-black'>
+          <a href="https://drive.google.com/file/d/1lV0p8to5iQhLBhHh5YFxyvPaL3upB889/view?usp=sharing">
+     
+          <div className='p-2'>
+            <h1 className='text-xl text-white font-medium text-center'>Download CV</h1>
+
+          </div>
+          </a>
+
+        </div>
+      </div>
+
     </section>
 
     <section id='service' className=''>
       <h1 className='text-xl font-medium'>About me</h1>
-      <p className='mt-3 text-xl'>As an inexperienced full stack software developer, I have solid programming knowledge and am willing to learn new technologies and skills. I have experience in developing web applications using programming languages such as JavaScript, HTML, CSS and frameworks such as React, Redux on the Front-End and Node.js, Java, Spring Boot, Express or Fastify on the Back-End. I am interested in working on challenging projects and collaborating with a team to achieve shared goals. I am motivated to continue learning and improving my skills and knowledge to be able to contribute effectively to any project.</p>
+      <p className='mt-3 text-xl'>As a full stack software developer I have solid programming knowledge and am willing to learn new technologies and skills. I have experience in developing web applications using programming languages such as JavaScript, HTML, CSS and frameworks such as React, Redux on the Front-End and Node.js, Java, Spring Boot, Express or Fastify on the Back-End. I am interested in working on challenging projects and collaborating with a team to achieve shared goals. I am motivated to continue learning and improving my skills and knowledge to be able to contribute effectively to any project..</p>
+
 
       <div className='mt-4 flex flex-col md:flex-row gap-8'>
         <div className='w-full shadow-lg rounded-md px-4 py-5 flex flex-col items-center text-center gap-1'>
@@ -116,11 +131,21 @@ function App() {
       </div>
 
 
+      <div className='flex flex-col md:flex-row gap-8 mt-8'>
+        <div className='w-full md:w-2/6 shadow-md rounded border-black'>
+          <a href="">
+                      <div className='h-48 md:h-40 rounded-t-md relative overflow-hidden'>
+                      <img src='/PORTAFOLIO.png' layout="fill" objectFit="cover" />
+          </div>
+          <div className='p-4'>
+            <h1 className='text-xl font-medium'>Portfolio 2023</h1>
 
+          </div>
+          </a>
 
+        </div>
 
-
-
+      </div>
 
 
 
@@ -167,7 +192,6 @@ function App() {
     <section id="footer" className="mt-5 rounded bg-black py-8 px-8">
         <div className="text-white md:text-center">
           <h1 className="font-medium text-lg">Contact Me</h1>
-          <p>Wanna talk anything?</p>
 
           <ul className="md:flex justify-center gap-4">
             <li className="flex items-center gap-2">
@@ -180,7 +204,7 @@ function App() {
             </li>
           </ul>
 
-          <div className="flex text-xl text-white gap-4 mt-2 md:justify-center">
+          <div className="flex text-xl text-white gap-6 mt-4 md:justify-center">
             <a href="https://www.linkedin.com/in/sebastian-mesa-555283219/">
               <AiFillLinkedin />
             </a>
