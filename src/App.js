@@ -1,198 +1,217 @@
-
 import './App.css';
 import Navbar from './Navbar'
-import {AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillMail, AiFillEnvironment, AiFillPhone} from 'react-icons/ai'
+import { useState } from 'react';
+import { AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillMail, AiFillEnvironment } from 'react-icons/ai'
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <main className='px-8 md:px-20 lg:px-40'>
-    
-    <Navbar />
+    <main className='px-4 sm:px-8 md:px-20 lg:px-40'>
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
-    <section id='home' className='min-h-screen text-center mt-4 flex flex-col justify-center '>
-        <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-56 h-56 relative overflow-hidden md:h-96 md:w-96 mb-2">
-          <img src='/juan.jpeg' layout="fill" objectFit="cover" />
+      <section
+        id='home'
+        className='min-h-screen text-center flex flex-col justify-center pt-24'
+      >
+        <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 relative overflow-hidden mb-2'>
+          <img src='/juan.jpeg' className="object-cover w-full h-full" alt="profile" />
         </div>
-        <h1 className='text-3xl md:text-5xl font-medium '>Sebastian Mesa</h1>
-        <h3 className='text-xl md:text-2xl'> Software Developer</h3>
-        <p className='text-md py-1 text-gray-800 md:text-xl'>Front End | Back End </p>
-        <div className='text-5xl py-4 flex justify-center gap-16 text-gray-600'>
-          <a href="https://www.linkedin.com/in/sebastian-mesa-555283219/">
-            <AiFillLinkedin /> 
-          </a>
-          
-          <a href="https://github.com/Mesa205">
-            <AiFillGithub />
-          </a>
-          <a href="https://www.instagram.com/_sebastianmesa_/">
-            <AiFillInstagram />
-          </a>
-          
-          
+        <h1 className='text-2xl sm:text-3xl md:text-5xl font-medium'>Sebastian Mesa</h1>
+        <h3 className='text-lg sm:text-xl md:text-2xl'>Software Developer | Law Student</h3>
+        <p className='text-sm sm:text-md py-1 text-gray-800 md:text-xl'>Front End | Back End</p>
+        <div className='text-3xl sm:text-4xl md:text-5xl py-4 flex justify-center gap-8 sm:gap-12 md:gap-16 text-gray-600'>
+          <a href="https://www.linkedin.com/in/sebastian-mesa-555283219/" className="transform hover:-translate-y-2 active:scale-95 transition-all duration-200"><AiFillLinkedin /></a>
+          <a href="https://github.com/Mesa205" className="transform hover:-translate-y-2 active:scale-95 transition-all duration-200"><AiFillGithub /></a>
+          <a href="https://www.instagram.com/_sebastianmesa_/" className="transform hover:-translate-y-2 active:scale-95 transition-all duration-200"><AiFillInstagram /></a>
         </div>
-
-            <div className='flex flex-col  gap-8 mt-8'>
-        <div className='w-full md:w-6/6 bg-black shadow-md rounded border-black'>
-          <a href="https://drive.google.com/file/d/1lV0p8to5iQhLBhHh5YFxyvPaL3upB889/view?usp=sharing">
-     
-          <div className='p-2'>
-            <h1 className='text-xl text-white font-medium text-center'>Download CV</h1>
-
+        <div className='flex flex-col gap-6 mt-8'>
+          <div className='w-full bg-black shadow-md rounded border-black cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200'>
+            <a href="https://drive.google.com/drive/folders/11gbAZOe3SWwPq_Xo6NPvuW0S98p4Wv2Q?usp=drive_link">
+              <div className='p-2'>
+                <h1 className='text-lg sm:text-xl text-white font-medium text-center'>Download CV</h1>
+              </div>
+            </a>
           </div>
-          </a>
-
         </div>
-      </div>
+      </section>
 
-    </section>
-
-    <section id='service' className=''>
-      <h1 className='text-xl font-medium'>About me</h1>
-      <p className='mt-3 text-xl'>As a full stack software developer I have solid programming knowledge and am willing to learn new technologies and skills. I have experience in developing web applications using programming languages such as JavaScript, HTML, CSS and frameworks such as React, Redux on the Front-End and Node.js, Java, Spring Boot, Express or Fastify on the Back-End. I am interested in working on challenging projects and collaborating with a team to achieve shared goals. I am motivated to continue learning and improving my skills and knowledge to be able to contribute effectively to any project..</p>
-
+      <section id='service' className='mt-10'>
+        <h1 className='text-2xl font-bold text-black mb-6 tracking-wide'>About me</h1>
+        <div className='mt-3 text-lg sm:text-xl md:text-2xl space-y-8 bg-neutral-900 rounded-xl shadow p-8 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200'>
+          <p className="text-white font-bold">
+            <span className="text-teal-400">A passionate Full Stack Developer and Law Student.</span> I study at Universidad Pontificia Bolivariana in Colombia, pursuing both disciplines in parallel. My independent work in software development has allowed me to design and build technology solutions tailored to each client, strengthening my skills in analysis, creativity, and project management.
+          </p>
+          <p className="text-white font-bold">
+            <span className="text-teal-400">Solid programming knowledge and hands-on experience.</span> I build web applications using JavaScript, HTML, and CSS. On the Front-End, I work with React and Redux; on the Back-End, I use Node.js, Java, Spring Boot, Express, and Fastify. I am always eager to learn new technologies and expand my skill set.
+          </p>
+          <p className="text-white font-bold">
+            <span className="text-teal-400">Disciplined, proactive, and motivated by growth.</span> My goal is to add value to initiatives that benefit from both technical expertise and legal understanding, building a career that bridges law and technology. I enjoy collaborating with teams and am committed to contributing effectively to every project I’m involved in.
+          </p>
+        </div>
+      </section>
 
       <div className='mt-4 flex flex-col md:flex-row gap-8'>
-        <div className='w-full shadow-lg rounded-md px-4 py-5 flex flex-col items-center text-center gap-1'>
-          <img src='software.png' className='w-48' alt='gambar' />
-          <h2 className='text-xl'>Software Development</h2>
-          <p className='text-gray-500'>.</p>
-          <p className='text-xl '> Use</p>
-          <ul>
+        <div className='bg-neutral-900 shadow rounded-xl p-8 flex flex-col items-center text-center gap-1 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200 w-full'>
+          <img src='software.png' className='w-32 sm:w-40 md:w-48' alt='Software' />
+          <h2 className='text-lg sm:text-xl font-bold text-white'>Software Development</h2>
+          <p className='text-lg sm:text-xl font-semibold text-white'>Areas</p>
+          <ul className='text-white'>
             <li>Front End</li>
             <li>Back end</li>
             <li>Data Base</li>
           </ul>
         </div>
-
-        <div className='w-full shadow-lg rounded-md px-4 py-5 flex flex-col items-center text-center gap-1'>
-          <img src='cloud.png' className='w-48' alt='gambar' />
-          <h2 className='text-xl'>Idioms</h2>
-          <p className='text-gray-500'>.</p>
-          <p className='text-xl'>Tools </p>
-          <ul>
+        <div className='bg-neutral-900 shadow rounded-xl p-8 flex flex-col items-center text-center gap-1 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200 w-full'>
+          <img src='cloud.png' className='w-32 sm:w-40 md:w-48' alt='Cloud' />
+          <h2 className='text-lg sm:text-xl font-bold text-white'>Programming Languages</h2>
+          <p className='text-lg sm:text-xl font-semibold text-white'></p>
+          <ul className='text-white'>
             <li>JavaScript</li>
             <li>Java</li>
             <li>Python</li>
-            <li>React</li>
+            <li>Visual Studio</li>
           </ul>
         </div>
-
-        <div className='w-full shadow-lg rounded-md px-4 py-5 flex flex-col items-center text-center gap-1'>
-          <img src='ops.png' className='w-48' alt='gambar' />
-          <h2 className='text-xl'>Frameworks</h2>
-          <p className='text-gray-500'>.</p>
-          <p className='text-xl '>Tools I Use</p>
-          <ul>
+        <div className='bg-neutral-900 shadow rounded-xl p-8 flex flex-col items-center text-center gap-1 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200 w-full'>
+          <img src='ops.png' className='w-32 sm:w-40 md:w-48' alt='Ops' />
+          <h2 className='text-lg sm:text-xl font-bold text-white'>Technologies & Tools</h2>
+          <p className='text-lg sm:text-xl font-semibold text-white'>Libraries / Frameworks</p>
+          <ul className='text-white'>
             <li>Express</li>
             <li>Fastify</li>
-            <li></li>
+            <li>React</li>
+            <li>React Native</li>
+            <li>Spring Boot</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>Postman</li>
           </ul>
         </div>
-
       </div>
 
-    </section>
-
-    <section id='portfolio' className='mt-10'>
-      <h1 className='text-xl font-medium'>Portfolio</h1>
-      <p className='mt-1 text-md'></p>
-
-      <div className='flex flex-col md:flex-row gap-8 mt-8'>
-        <div className='w-full md:w-2/6 shadow-md rounded border-black'>
-          <a href="https://incomparable-cajeta-5c66af.netlify.app/">
-                      <div className='h-48 md:h-40 rounded-t-md relative overflow-hidden'>
-                      <img src='/toutibe.png' layout="fill" objectFit="cover" />
+      <section id='portfolio' className='mt-10'>
+        <h1 className='text-xl font-medium'>Portfolio Software Developer</h1>
+        <p className='mt-1 text-md'></p>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-8'>
+          {/* Primer cuadro */}
+          <div className='bg-neutral-900 rounded-xl shadow p-8 flex-shrink-0 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200 mx-auto'>
+            <a href="https://incomparable-cajeta-5c66af.netlify.app/">
+              <div className='h-40 sm:h-48 md:h-40 rounded-t-md relative overflow-hidden'>
+                <img src='/toutibe.png' className="object-cover w-full h-full" alt="clo" />
+              </div>
+              <div className='p-4'>
+                <h1 className='text-lg sm:text-xl font-medium text-white'>YouTube Clone</h1>
+                <p className='mt-2 text-base sm:text-lg text-white font-bold'>This project is a functional clone of the YouTube platform, where users can add videos and interact with a dynamic interface. Built using JavaScript and powered by Vite for fast and modern development, the application replicates the core structure of YouTube, including video thumbnails, titles, and a responsive layout. It focuses on clean UI design, efficient performance, and component-based architecture for easy scalability and future improvements.</p>
+              </div>
+            </a>
           </div>
-          <div className='p-4'>
-            <h1 className='text-xl font-medium'>Clone Youtube</h1>
-
+          {/* Segundo cuadro */}
+          <div className='bg-neutral-900 rounded-xl shadow p-8 flex-shrink-0 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200 mx-auto'>
+            <a href="https://api-ip.vercel.app/">
+              <div className='h-40 sm:h-48 md:h-40 rounded-t-md relative overflow-hidden'>
+                <img src='/ip.png' className="object-cover w-full h-full" alt="Public IP information" />
+              </div>
+              <div className='p-4'>
+                <h1 className='text-lg sm:text-xl font-medium text-white'>Public IP information</h1>
+                <p className='mt-2 text-base sm:text-lg text-white font-bold'>A page has been developed to provide information about your IP address, provided it is public. This tool is very useful for identifying the origin of your emails, messages, files, and other sources.</p>
+              </div>
+            </a>
           </div>
-          </a>
+          {/* Tercer cuadro */}
+          <div className='bg-neutral-900 rounded-xl shadow p-8 flex-shrink-0 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200 mx-auto'>
+            <a href="https://redu-prueba.netlify.app/#">
+              <div className='h-40 sm:h-48 md:h-40 rounded-t-md relative overflow-hidden'>
+                <img src='/notas.png' className="object-cover w-full h-full" alt="Notes" />
+              </div>
+              <div className='p-4'>
+                <h1 className='text-lg sm:text-xl font-medium text-white'>Quick Notes</h1>
+                <p className='mt-2 text-base sm:text-lg text-white font-bold'>It was developed so you can create quick notes, categorizing them according to importance, with the importance of not deleting them.<br/>Vite and React were used.</p>
+              </div>
+            </a>
+          </div>
+          {/* Cuarto cuadro */}
+          <div className='bg-neutral-900 rounded-xl shadow p-8 flex-shrink-0 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200 mx-auto'>
+            <a href="">
+              <div className='h-40 sm:h-48 md:h-40 rounded-t-md relative overflow-hidden'>
+                <img src='/PORTAFOLIO.png' className="object-cover w-full h-full" alt="Portfolio" />
+              </div>
+              <div className='p-4'>
+                <h1 className='text-lg sm:text-xl font-medium text-white'>Portfolio</h1>
+                <p className='mt-2 text-base sm:text-lg text-white font-bold'>It was developed to showcase my knowledge of software development and law. The idea is to upload the progress of each completed project here.<br/>React and JavaScript were used.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+            <section id='portfolio' className='mt-10'>
+        <h1 className='text-xl font-medium'>Portfolio Law Student</h1>
+        <p className='mt-1 text-md'></p>
+        <div className='flex flex-col md:flex-row gap-8 mt-8'>
+          <div className='w-full md:w-1/2 lg:w-2/5 bg-neutral-900 rounded-xl shadow p-8 flex-shrink-0 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200 mx-auto'>
+            <a href="https://www.linkedin.com/posts/sebastian-mesa-555283219_derecho-traernsito-prescripciaejn-activity-7302394554584899584-HMl_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADcJB1EBAnrN2gXfCZIExnqwGIXgi9_0dvA">
+              <div className='h-40 sm:h-48 md:h-40 rounded-t-md relative overflow-hidden'>
+                <img src='/Girardota.png' className="object-cover w-full h-full" alt="Traffic Ticket Prescription" />
+              </div>
+              <div className='p-4'>
+                <h1 className='text-lg sm:text-xl font-medium text-white'>Traffic Ticket Prescription</h1>
+                <h2 className='text-white'>Girardota, Antioquia</h2>
+                <p className='mt-2 text-base sm:text-lg text-white font-bold'>I successfully managed to have a traffic fine declared time-barred through a legal petition submitted to the Municipality of Girardota, Colombia. Based on Article 159 of Law 769 of 2002, I filed a formal request which led the authorities to recognize the statute of limitations and remove the debt from their local system and the national traffic database (SIMIT).</p>
+              </div>
+            </a>
+          </div>
+          <div className='w-full md:w-1/2 lg:w-2/5 bg-neutral-900 rounded-xl shadow p-8 flex-shrink-0 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200 mx-auto'>
+            <a href="https://www.linkedin.com/posts/sebastian-mesa-555283219_derecho-traernsito-prescripciaejn-activity-7302394554584899584-HMl_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADcJB1EBAnrN2gXfCZIExnqwGIXgi9_0dvA">
+              <div className='h-40 sm:h-48 md:h-40 rounded-t-md relative overflow-hidden'>
+                <img src='/Barbosa.png' className="object-cover w-full h-full" alt="Traffic Ticket Prescription" />
+              </div>
+              <div className='p-4'>
+                <h1 className='text-lg sm:text-xl font-medium text-white'>Traffic Ticket Prescription</h1>
+                <h2 className='text-white'>Barbosa, Antioquia</h2>
+                <p className='mt-2 text-base sm:text-lg text-white font-bold'>I also obtained a favorable outcome in a coercive collection process before the Municipality of Barbosa, Antioquia. Relying on the same legal basis, I presented a petition that resulted in the debt being officially declared prescribed and eliminated from the records and SIMIT.</p>
+              </div>
+            </a>
+          </div>
 
         </div>
+      </section>
 
-      </div>
-
-
-      <div className='flex flex-col md:flex-row gap-8 mt-8'>
-        <div className='w-full md:w-2/6 shadow-md rounded border-black'>
-          <a href="https://redu-prueba.netlify.app/#">
-                      <div className='h-48 md:h-40 rounded-t-md relative overflow-hidden'>
-                      <img src='/notas.png' layout="fill" objectFit="cover" />
+      <section id='license' className='mt-10'>
+        <h1 className='text-xl font-medium'>License & Certifications</h1>
+        <p className='mt-1 text-md'></p>
+        <div className='flex flex-col md:flex-row gap-8 mt-8'>
+          <div className='w-full md:w-1/2 lg:w-2/5 bg-neutral-900 rounded-xl shadow p-8 flex-shrink-0 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200 mx-auto'>
+            <a href="https://drive.google.com/file/d/1TNkdd1enIgVc4iRPzUFYqPRZu45OEaeM/view?usp=drive_link">
+              <div className='h-40 sm:h-48 md:h-40 rounded-t-md relative overflow-hidden'>
+                <img src='xx.png' className="object-cover w-full h-full" alt="UPB" />
+              </div>
+              <div className='p-4'>
+                <h1 className='text-lg sm:text-xl font-medium text-white'>Software Development</h1>
+                <h2 className='text-white'>Universidad Pontificia Bolivariana</h2>
+                <p className='mt-2 text-base sm:text-lg text-white font-bold'>Jul 2023</p>
+              </div>
+            </a>
           </div>
-          <div className='p-4'>
-            <h1 className='text-xl font-medium'>Notes</h1>
-
+          <div className='w-full md:w-1/2 lg:w-2/5 bg-neutral-900 rounded-xl shadow p-8 flex-shrink-0 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200 mx-auto'>
+            <a href="https://drive.google.com/file/d/1_4f7-zS5gQ8sgh7J8wzej5rTOtQYYHgQ/view?usp=sharing">
+              <div className='h-40 sm:h-48 md:h-40 rounded-t-md relative overflow-hidden'>
+                <img src='dd.png' className="object-cover w-full h-full" alt="UPB" />
+              </div>
+              <div className='p-4'>
+                <h1 className='text-lg sm:text-xl font-medium text-white'>Certificate of the International Congress on Law, Technology and Innovation</h1>
+                <h2 className='text-white'>Universidad Pontificia Bolivariana</h2>
+                <p className='mt-2 text-base sm:text-lg text-white font-bold'>Mar 2023</p>
+              </div>
+            </a>
           </div>
-          </a>
-
         </div>
+      </section>
 
-      </div>
-
-
-      <div className='flex flex-col md:flex-row gap-8 mt-8'>
-        <div className='w-full md:w-2/6 shadow-md rounded border-black'>
-          <a href="">
-                      <div className='h-48 md:h-40 rounded-t-md relative overflow-hidden'>
-                      <img src='/PORTAFOLIO.png' layout="fill" objectFit="cover" />
-          </div>
-          <div className='p-4'>
-            <h1 className='text-xl font-medium'>Portfolio 2023</h1>
-
-          </div>
-          </a>
-
-        </div>
-
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </section>
-
-    <section id='license' className='mt-10'>
-      <h1 className='text-xl font-medium'>License & Certifications</h1>
-      <p className='mt-1 text-md'></p>
-      
-      <div className='flex flex-col md:flex-row gap-8 mt-8'>
-        <div className='w-full md:w-1/6 shadow-md rounded border-black'>
-          <a href="">
-                      <div className='h-48 md:h-40 rounded-t-md relative overflow-hidden'>
-            <img src='https://th.bing.com/th/id/R.9f497eb06380c9db735910e710a34dc3?rik=CdIVJGB%2bB6asbQ&riu=http%3a%2f%2fwww.afacom.org%2fimages%2fupb+logo.jpg&ehk=%2f0aP1xPWxUmH7HriCrCQmy9WZQJ4CJAUGIEUPCCjAZk%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1' layout="fill" objectFit="cover"/>
-          </div>
-          <div className='p-4'>
-            <h1 className='text-xl font-medium'>Software Development</h1>
-            <p className=''>Universidad Pontificia Bolivariana</p>
-            <p className='text-sm text-gray-500'>Jul 2023</p>
-          </div>
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-    
-    
-    <section id="footer" className="mt-5 rounded bg-black py-8 px-8">
+      <section id="footer" className="mt-5 rounded bg-black py-8 px-4 sm:px-8">
         <div className="text-white md:text-center">
           <h1 className="font-medium text-lg">Contact Me</h1>
-
           <ul className="md:flex justify-center gap-4">
             <li className="flex items-center gap-2">
               <AiFillMail />
@@ -203,25 +222,16 @@ function App() {
               <p>Medellin, Colombia</p>
             </li>
           </ul>
-
           <div className="flex text-xl text-white gap-6 mt-4 md:justify-center">
-            <a href="https://www.linkedin.com/in/sebastian-mesa-555283219/">
-              <AiFillLinkedin />
-            </a>
-            <a href="https://github.com/Mesa205">
-              <AiFillGithub />
-            </a>
+            <a href="https://www.linkedin.com/in/sebastian-mesa-555283219/"><AiFillLinkedin /></a>
+            <a href="https://github.com/Mesa205"><AiFillGithub /></a>
           </div>
-
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-
           <p className="text-center text-sm text-gray-300 sm:text-center">
-            2023
-            <a> Sebastian Mesa</a>
+            2025 <a> Sebastian Mesa</a>
           </p>
         </div>
       </section>
-
     </main>
   );
 }
