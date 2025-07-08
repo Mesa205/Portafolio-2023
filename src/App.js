@@ -12,9 +12,9 @@ function App() {
 
       <section
         id='home'
-        className='min-h-screen text-center flex flex-col justify-center pt-24 sm:pt-28 md:pt-32 lg:pt-36'
+        className='min-h-screen text-center flex flex-col justify-center pt-16 sm:pt-24 md:pt-32 lg:pt-36'
       >
-        <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-32 h-32 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-64 lg:h-64 relative overflow-hidden mb-6 shadow-lg border-4 border-white'>
+        <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-44 h-44 sm:w-56 sm:h-56 md:w-60 md:h-60 lg:w-64 lg:h-64 relative overflow-hidden mb-6 shadow-lg border-4 border-white'>
           <img src='/juan.jpeg' className="object-cover w-full h-full" alt="profile" />
         </div>
         <h1 className='text-2xl sm:text-3xl md:text-4xl font-medium mt-2'>Sebastian Mesa</h1>
