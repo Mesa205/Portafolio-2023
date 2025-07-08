@@ -12,9 +12,9 @@ function App() {
 
       <section
         id='home'
-        className='min-h-screen text-center flex flex-col justify-center pt-8'
+        className='min-h-screen text-center flex flex-col justify-center pt-24 sm:pt-28 md:pt-32 lg:pt-36'
       >
-        <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 relative overflow-hidden mb-2'>
+        <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-32 h-32 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-64 lg:h-64 relative overflow-hidden mb-6 shadow-lg border-4 border-white'>
           <img src='/juan.jpeg' className="object-cover w-full h-full" alt="profile" />
         </div>
         <h1 className='text-2xl sm:text-3xl md:text-4xl font-medium mt-2'>Sebastian Mesa</h1>
@@ -25,7 +25,7 @@ function App() {
           <a href="https://github.com/Mesa205" className="transform hover:-translate-y-2 active:scale-95 transition-all duration-200"><AiFillGithub /></a>
           <a href="https://www.instagram.com/_sebastianmesa_/" className="transform hover:-translate-y-2 active:scale-95 transition-all duration-200"><AiFillInstagram /></a>
         </div>
-        <div className='flex flex-col gap-4 mt-6'>
+        <div className='flex flex-col gap-4 mt-10'>
           <div className='w-full bg-black shadow-md rounded border-black cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200'>
             <a href="https://drive.google.com/drive/folders/11gbAZOe3SWwPq_Xo6NPvuW0S98p4Wv2Q?usp=drive_link">
               <div className='p-2'>
