@@ -12,24 +12,24 @@ function App() {
 
       <section
         id='home'
-        className='min-h-screen text-center flex flex-col justify-center pt-24'
+        className='min-h-screen text-center flex flex-col justify-center pt-8'
       >
-        <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 relative overflow-hidden mb-2'>
+        <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 relative overflow-hidden mb-2'>
           <img src='/juan.jpeg' className="object-cover w-full h-full" alt="profile" />
         </div>
-        <h1 className='text-2xl sm:text-3xl md:text-5xl font-medium'>Sebastian Mesa</h1>
-        <h3 className='text-lg sm:text-xl md:text-2xl'>Software Developer | Law Student</h3>
-        <p className='text-sm sm:text-md py-1 text-gray-800 md:text-xl'>Front End | Back End</p>
-        <div className='text-3xl sm:text-4xl md:text-5xl py-4 flex justify-center gap-8 sm:gap-12 md:gap-16 text-gray-600'>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl font-medium mt-2'>Sebastian Mesa</h1>
+        <h3 className='text-base sm:text-lg md:text-xl'>Software Developer | Law Student</h3>
+        <p className='text-xs sm:text-sm py-1 text-gray-800 md:text-lg'>Front End | Back End</p>
+        <div className='text-2xl sm:text-3xl md:text-4xl py-2 flex justify-center gap-6 sm:gap-10 md:gap-12 text-gray-600'>
           <a href="https://www.linkedin.com/in/sebastian-mesa-555283219/" className="transform hover:-translate-y-2 active:scale-95 transition-all duration-200"><AiFillLinkedin /></a>
           <a href="https://github.com/Mesa205" className="transform hover:-translate-y-2 active:scale-95 transition-all duration-200"><AiFillGithub /></a>
           <a href="https://www.instagram.com/_sebastianmesa_/" className="transform hover:-translate-y-2 active:scale-95 transition-all duration-200"><AiFillInstagram /></a>
         </div>
-        <div className='flex flex-col gap-6 mt-8'>
+        <div className='flex flex-col gap-4 mt-6'>
           <div className='w-full bg-black shadow-md rounded border-black cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200'>
             <a href="https://drive.google.com/drive/folders/11gbAZOe3SWwPq_Xo6NPvuW0S98p4Wv2Q?usp=drive_link">
               <div className='p-2'>
-                <h1 className='text-lg sm:text-xl text-white font-medium text-center'>Download CV</h1>
+                <h1 className='text-base sm:text-lg text-white font-medium text-center'>Download CV</h1>
               </div>
             </a>
           </div>
