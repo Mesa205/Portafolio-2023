@@ -106,7 +106,7 @@ function App() {
             </a>
           </div>
           <div className='bg-neutral-900 rounded-xl shadow p-4 sm:p-6 md:p-8 flex flex-col flex-shrink-0 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200'>
-            <a href="">
+            <div>
               <div className='h-20 sm:h-28 md:h-24 rounded-t-md relative overflow-hidden'>
                 <img src='/comparendos medellin maria adalguiza.png' className="object-cover w-full h-full" alt="Case Study" />
               </div>
@@ -115,7 +115,7 @@ function App() {
                 <h2 className='text-sm text-white'>Medellin, Antioquia</h2>
                 <p className='mt-2 text-xs sm:text-sm md:text-base text-white font-bold'>I also obtained a favorable outcome regarding seven fines in a coercive collection process before the Municipality of Medellín, Antioquia. Based on the same legal grounds, I filed a petition that resulted in the official declaration of the debt's statute of limitations and its removal from the records and SIMIT system.</p>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </section>
@@ -162,7 +162,7 @@ function App() {
           </div>
           {/* Cuarto cuadro */}
           <div className='bg-neutral-900 rounded-xl shadow p-8 flex flex-col flex-shrink-0 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200'>
-            <a href="">
+            <div>
               <div className='h-24 sm:h-32 md:h-24 rounded-t-md relative overflow-hidden'>
                 <img src='/PORTAFOLIO.png' className="object-cover w-full h-full" alt="Portfolio" />
               </div>
@@ -170,7 +170,7 @@ function App() {
                 <h1 className='text-lg sm:text-xl font-medium text-white'>Portfolio</h1>
                 <p className='mt-2 text-base sm:text-lg text-white font-bold'>It was developed to showcase my knowledge of software development and law. The idea is to upload the progress of each completed project here.<br/>React and JavaScript were used.</p>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </section>
@@ -227,7 +227,7 @@ function App() {
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <p className="text-center text-sm text-gray-300 sm:text-center">
-            20256 <a> Sebastian Mesa</a>
+            20256 <span> Sebastian Mesa</span>
           </p>
         </div>
       </section>
