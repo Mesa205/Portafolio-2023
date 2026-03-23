@@ -231,6 +231,7 @@ function App() {
           </p>
         </div>
       </section>
+      
     </main>
   );
 }
