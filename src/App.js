@@ -7,29 +7,29 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <main className='px-4 sm:px-8 md:px-20 lg:px-40 w-full pt-20 sm:pt-24 md:pt-28'>
+    <main className='px-4 sm:px-8 md:px-20 lg:px-40 w-full pt-12 sm:pt-14 md:pt-16'>
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
       <section
         id='home'
-        className='min-h-[calc(100vh-5rem)] sm:min-h-[calc(100vh-6rem)] text-center flex flex-col justify-center'
+        className='text-center flex flex-col justify-start'
       >
-        <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-40 h-40 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 relative overflow-hidden mb-4 sm:mb-6 shadow-lg border-4 border-white'>
+        <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-36 h-36 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 relative overflow-hidden mb-3 sm:mb-4 shadow-lg border-4 border-white'>
           <img src='/Foto de perfil Juan Sebastian.jpeg' className="object-cover w-full h-full" alt="profile" />
         </div>
-        <h1 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium mt-1 sm:mt-2'>Juan Sebastian Mesa</h1>
-        <h3 className='text-sm sm:text-base md:text-lg lg:text-xl mt-1'>Law Student | Software Developer </h3>
+        <h1 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium mt-1'>Juan Sebastian Mesa</h1>
+        <h3 className='text-sm sm:text-base md:text-lg lg:text-xl mt-0.5 sm:mt-1'>Law Student | Software Developer </h3>
         <p className='text-xs sm:text-sm md:text-base py-1 text-gray-800'>Co-Founder of Rising</p>
-        <div className='text-xl sm:text-2xl md:text-3xl lg:text-4xl py-2 flex justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 text-gray-600'>
+        <div className='text-xl sm:text-2xl md:text-3xl lg:text-3xl py-1 sm:py-2 flex justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 text-gray-600'>
           <a href="https://www.linkedin.com/in/sebastian-mesa-555283219/" className="transform hover:-translate-y-2 active:scale-95 transition-all duration-200"><AiFillLinkedin /></a>
           <a href="https://github.com/Mesa205" className="transform hover:-translate-y-2 active:scale-95 transition-all duration-200"><AiFillGithub /></a>
           <a href="https://www.instagram.com/_sebastianmesa_/" className="transform hover:-translate-y-2 active:scale-95 transition-all duration-200"><AiFillInstagram /></a>
         </div>
-        <div className='flex flex-col gap-4 mt-10'>
+        <div className='flex flex-col gap-3 mt-4 sm:mt-6'>
           <div className='w-full bg-black shadow-md rounded border-black cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200'>
             <a href="https://drive.google.com/drive/folders/11gbAZOe3SWwPq_Xo6NPvuW0S98p4Wv2Q?usp=drive_link">
               <div className='p-2'>
-                <h1 className='text-base sm:text-lg text-white font-medium text-center'>Download CV</h1>
+                <h1 className='text-sm sm:text-base md:text-lg text-white font-medium text-center'>Download CV</h1>
               </div>
             </a>
           </div>
