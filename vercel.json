@@ -1,7 +1,5 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "build",
-  "env": {
-    "NODE_VERSION": "18.17.0"
-  }
+  "nodeVersion": "18.17.0"
 }
