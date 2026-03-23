@@ -39,14 +39,14 @@ function App() {
       <section id='service' className='mt-8 sm:mt-12 md:mt-16'>
         <h1 className='text-xl sm:text-2xl md:text-3xl font-bold text-black mb-4 sm:mb-6 tracking-wide'>About me</h1>
         <div className='mt-3 text-base sm:text-lg md:text-xl lg:text-2xl space-y-6 sm:space-y-8 bg-neutral-900 rounded-xl shadow p-4 sm:p-6 md:p-8 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200'>
-          <p className="text-white font-bold">
-            <span className="text-teal-400">A passionate Full Stack Developer and Law Student.</span> I study at Universidad Pontificia Bolivariana in Colombia, pursuing both disciplines in parallel. My independent work in software development has allowed me to design and build technology solutions tailored to each client, strengthening my skills in analysis, creativity, and project management.
+          <p className="text-white font-bold text-justify leading-relaxed">
+            <span className="text-teal-400">Full-Stack Developer and Law student.</span> Currently pursuing both disciplines simultaneously at Universidad Pontificia Bolivariana. I have experience working as a freelance software developer and independent legal assistant, which has enabled me to design and implement tailored technological solutions for each client while strengthening my analytical, creative, and project management skills.
           </p>
-          <p className="text-white font-bold">
-            <span className="text-teal-400">Solid programming knowledge and hands-on experience.</span> I build web applications using JavaScript, HTML, and CSS. On the Front-End, I work with React and Redux; on the Back-End, I use Node.js, Java, Spring Boot, Express, and Fastify. I am always eager to learn new technologies and expand my skill set.
+          <p className="text-white font-bold text-justify leading-relaxed">
+            <span className="text-teal-400">Strong legal and technical focus.</span> My areas of interest include Corporate, Commercial, and Administrative Law, with a particular focus on Legal Tech. I possess solid programming knowledge and hands-on experience in web application development using JavaScript, HTML, and CSS. On the front end, I work with React and Redux; on the back end, I use technologies such as Node.js, Java, Spring Boot, Express, and Fastify. I am highly motivated to continuously learn and stay up to date with emerging technologies.
           </p>
-          <p className="text-white font-bold">
-            <span className="text-teal-400">Disciplined, proactive, and motivated by growth.</span> My goal is to add value to initiatives that benefit from both technical expertise and legal understanding, building a career that bridges law and technology. I enjoy collaborating with teams and am committed to contributing effectively to every project I'm involved in.
+          <p className="text-white font-bold text-justify leading-relaxed">
+            <span className="text-teal-400">Disciplined, proactive, and growth-driven.</span> My goal is to contribute value to projects that benefit from both technical expertise and legal knowledge, building a professional career that bridges law and technology. I enjoy collaborative work environments and am committed to making meaningful contributions to every project I am part of.
           </p>
         </div>
       </section>
