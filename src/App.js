@@ -25,7 +25,7 @@ function App() {
           <a href="https://github.com/Mesa205" className="transform hover:-translate-y-2 active:scale-95 transition-all duration-200"><AiFillGithub /></a>
           <a href="https://www.instagram.com/_sebastianmesa_/" className="transform hover:-translate-y-2 active:scale-95 transition-all duration-200"><AiFillInstagram /></a>
         </div>
-        <div className='flex flex-col gap-4 mt-6 sm:mt-8'>
+        <div className='w-full flex flex-col gap-4 mt-6 sm:mt-8'>
           <div className='w-full bg-black shadow-md rounded border-black cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl active:scale-95 transition-all duration-200'>
             <a href="https://drive.google.com/drive/folders/11gbAZOe3SWwPq_Xo6NPvuW0S98p4Wv2Q?usp=drive_link">
               <div className='p-2'>
