@@ -2,3 +2,10 @@
 from = "/*"
 to = "/index.html"
 status = 200
+
+[build]
+command = "npm run build"
+functions = "functions"
+
+[build.environment]
+NODE_VERSION = "24.11.1"
