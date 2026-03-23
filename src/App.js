@@ -7,12 +7,12 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <main className='px-4 sm:px-8 md:px-20 lg:px-40 w-full'>
+    <main className='px-4 sm:px-8 md:px-20 lg:px-40 w-full pt-20 sm:pt-24 md:pt-28'>
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
       <section
         id='home'
-        className='min-h-screen text-center flex flex-col justify-center mt-16 sm:mt-20 md:mt-24 lg:mt-28'
+        className='min-h-[calc(100vh-5rem)] sm:min-h-[calc(100vh-6rem)] text-center flex flex-col justify-center'
       >
         <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-40 h-40 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 relative overflow-hidden mb-4 sm:mb-6 shadow-lg border-4 border-white'>
           <img src='/Foto de perfil Juan Sebastian.jpeg' className="object-cover w-full h-full" alt="profile" />
